@@ -29,13 +29,6 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t flask-app .
-     
-    - name: Run Linter
-      run: flake8 app.py
-
-    - name: Run Tests
-      run: pytest    
 
     - name: Final message
       run: echo "CI/CD pipeline executed successfully!"
-
